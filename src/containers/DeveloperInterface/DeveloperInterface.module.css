@@ -1,0 +1,42 @@
+.Container {
+    width: 100%;
+    height: 100%;
+    margin-top: 56px;
+}
+.Content {
+    margin-top: 72px
+}
+.ToolArea {
+    display: flex;
+    flex-flow: row-reverse;
+    box-sizing: border-box;
+}
+.DesignerArea {
+    height: calc(100% - 48px);
+    box-sizing: border-box;
+    width: 100% ;
+}
+.ElementContainer:focus{
+    outline: none;
+}
+.PaddingClass {
+    padding: 8px;
+}
+.CreateButtonContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+}
+
+@media (min-width: 500px) {
+    .Content{
+        width: calc(100% - 280px);
+        height: calc(100%);
+    }
+    .Container{
+        height: calc(100%);
+        margin-top: 56px;
+        width: calc(100% - 280px);
+        margin-left: 280px;
+    }
+}
